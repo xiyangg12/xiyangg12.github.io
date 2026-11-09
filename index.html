@@ -9,92 +9,73 @@
     />
     <title>Xiyang Li | Computational Linguistics</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header">
-      <a class="site-name" href="#top">Xiyang Li</a>
+    <header class="site-header" id="top">
+      <div class="identity">
+        <h1>Xiyang Li</h1>
+        <p>University of Zurich | Department of Computational Linguistics</p>
+        <a href="mailto:xiyang.li2@uzh.ch">xiyang.li2@uzh.ch</a>
+      </div>
+
       <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publication">Publication</a>
+        <a href="#about">about</a>
+        <a href="#research">research</a>
+        <a href="#publication">publication</a>
+        <a href="#contact">contact</a>
+        <a href="https://orcid.org/0009-0004-3456-6923">ORCID</a>
         <a href="https://github.com/xiyangg12">GitHub</a>
       </nav>
     </header>
 
     <main id="main-content">
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow">PhD student · Computational Linguistics</p>
-          <h1>Speech technology for the diversity of Mandarin.</h1>
-          <p class="hero-intro">
-            I study how automatic speech recognition models represent and use
-            phonological information across Mandarin dialects, with a focus on
-            lexical tone.
-          </p>
-          <div class="hero-links" aria-label="Profile links">
-            <a class="button button-primary" href="mailto:xiyang.li2@uzh.ch">Email me</a>
-            <a class="button" href="#research">Explore research</a>
-          </div>
-        </div>
+      <section class="intro" id="about" data-reveal>
+        <img
+          class="portrait"
+          src="assets/xiyang-li.png"
+          alt="Portrait of Xiyang Li"
+          width="200"
+          height="200"
+        />
 
-        <figure class="portrait-wrap">
-          <img
-            class="portrait"
-            src="assets/xiyang-li.png"
-            alt="Portrait of Xiyang Li"
-            width="200"
-            height="200"
-          />
-        </figure>
-      </section>
-
-      <section class="section about" id="about" data-reveal>
-        <div class="section-label">
-          <p>About</p>
-        </div>
-        <div class="section-content about-copy">
-          <h2>Language variation meets speech representation learning.</h2>
-          <p>
-            I am a PhD student in the Department of Computational Linguistics at
-            the University of Zurich. My research brings together automatic speech
-            recognition, speech representation learning, and experimental
-            phonetics to understand how speech models handle regional variation.
+        <div class="intro-copy">
+          <h2>About me</h2>
+          <p class="lead">
+            I study speech technology for the diversity of Mandarin, with a
+            focus on how automatic speech recognition models represent and use
+            phonological information.
           </p>
           <p>
-            I am particularly interested in whether models preserve lexical tone,
-            how phonological knowledge can improve recognition across Mandarin
-            dialects, and how acoustic evidence interacts with semantic context.
+            I am a PhD student in Computational Linguistics at the University of
+            Zurich. My research brings together automatic speech recognition,
+            speech representation learning, and experimental phonetics to
+            understand how speech models handle regional variation.
           </p>
-          <ul class="interest-list" aria-label="Research interests">
-            <li>Mandarin dialects</li>
-            <li>Automatic speech recognition</li>
-            <li>Lexical tone</li>
-            <li>Speech representation learning</li>
-          </ul>
+          <p>
+            I am particularly interested in whether models preserve lexical
+            tone, how phonological knowledge can improve recognition across
+            Mandarin dialects, and how acoustic evidence interacts with semantic
+            context.
+          </p>
+          <p class="profile-links">
+            <a href="https://orcid.org/0009-0004-3456-6923">ORCID</a>
+            <a href="https://github.com/xiyangg12">GitHub</a>
+            <a href="mailto:xiyang.li2@uzh.ch">Email</a>
+          </p>
         </div>
       </section>
 
       <section class="section" id="research" data-reveal>
-        <div class="section-label">
-          <p>Current research</p>
-        </div>
-        <div class="section-content project-list">
-          <article class="project">
-            <div class="project-meta">
-              <span>Ongoing</span>
-              <span>2025–</span>
-            </div>
-            <h2>Phonology-informed ASR Adaptation across Mandarin Dialects</h2>
+        <h2>Current research</h2>
+
+        <article class="research-item">
+          <p class="year">2025–</p>
+          <div>
+            <h3>Phonology-informed ASR Adaptation across Mandarin Dialects</h3>
             <p>
               This project examines whether explicit tone and phone information
               can improve pretrained ASR models across 14 Mandarin dialects. It
@@ -102,17 +83,15 @@
               phonology-informed adaptation changes recognition errors.
             </p>
             <p class="collaborator">
-              With
-              <a href="https://eleanorchodroff.com/">Eleanor Chodroff</a>
+              With <a href="https://eleanorchodroff.com/">Eleanor Chodroff</a>
             </p>
-          </article>
+          </div>
+        </article>
 
-          <article class="project">
-            <div class="project-meta">
-              <span>Ongoing</span>
-              <span>2026–</span>
-            </div>
-            <h2>Lexical Tone and Semantic Context in Mandarin ASR</h2>
+        <article class="research-item">
+          <p class="year">2026–</p>
+          <div>
+            <h3>Lexical Tone and Semantic Context in Mandarin ASR</h3>
             <p>
               We are developing a controlled speech corpus of tone-based minimal
               pairs in Standard and Chengdu Mandarin. The project tests how ASR
@@ -120,76 +99,67 @@
               two sources of information point toward different words.
             </p>
             <p class="collaborator">
-              With
-              <a href="https://eleanorchodroff.com/">Eleanor Chodroff</a>
+              With <a href="https://eleanorchodroff.com/">Eleanor Chodroff</a>
             </p>
-          </article>
-        </div>
+          </div>
+        </article>
       </section>
 
-      <section class="section publication-section" id="publication" data-reveal>
-        <div class="section-label">
-          <p>Publication</p>
-        </div>
-        <div class="section-content">
-          <article class="publication">
-            <figure class="publication-figure">
-              <img
-                src="assets/paper-speaker-similarity.png"
-                alt="Violin plots comparing same-speaker and different-speaker similarity across language and fine-tuning conditions"
-                width="271"
-                height="186"
-                loading="lazy"
-              />
-              <figcaption>
-                Voice similarity separates same-speaker from different-speaker
-                pairs across languages and model conditions.
-              </figcaption>
-            </figure>
-            <div class="publication-copy">
-              <p class="publication-venue">Interspeech 2026</p>
-              <h2>
-                Human-like cross-language generalisation in deep neural speaker
-                embeddings and its acoustic foundations
-              </h2>
-              <p class="authors">
-                Tianze Xu*, <strong>Xiyang Li*</strong>, Xiaoming Jiang, and Volker
-                Dellwo
-              </p>
-              <p class="equal-note">* Equal contribution</p>
-              <p>
-                We compare voice-similarity judgments from human listeners with
-                representations from 18 speaker-embedding models using
-                Cantonese–English bilingual speech, examining whether model
-                generalisation mirrors human perception and acoustic structure.
-              </p>
-              <div class="publication-links">
-                <a href="https://www.isca-archive.org/interspeech_2026/xu26f_interspeech.pdf">Paper</a>
-                <a href="https://doi.org/10.21437/Interspeech.2026-858">DOI</a>
-              </div>
-            </div>
-          </article>
-        </div>
+      <section class="section" id="publication" data-reveal>
+        <h2>Publication</h2>
+
+        <article class="publication">
+          <figure>
+            <img
+              src="assets/paper-speaker-similarity.png"
+              alt="Violin plots comparing same-speaker and different-speaker similarity across language and fine-tuning conditions"
+              width="271"
+              height="186"
+              loading="lazy"
+            />
+            <figcaption>
+              Voice similarity across speaker identity, language, and model
+              conditions.
+            </figcaption>
+          </figure>
+
+          <div class="publication-copy">
+            <p class="venue">2026 · Interspeech</p>
+            <h3>
+              Human-like cross-language generalisation in deep neural speaker
+              embeddings and its acoustic foundations
+            </h3>
+            <p class="authors">
+              Tianze Xu*, <strong>Xiyang Li*</strong>, Xiaoming Jiang, and Volker
+              Dellwo
+            </p>
+            <p class="equal-note">* Equal contribution</p>
+            <p>
+              We compare human voice-similarity judgments with representations
+              from 18 speaker-embedding models using Cantonese–English bilingual
+              speech.
+            </p>
+            <p class="paper-links">
+              <a href="https://www.isca-archive.org/interspeech_2026/xu26f_interspeech.pdf">Paper</a>
+              <a href="https://doi.org/10.21437/Interspeech.2026-858">DOI</a>
+            </p>
+          </div>
+        </article>
       </section>
 
-      <section class="contact" id="contact" data-reveal>
-        <p class="eyebrow">Get in touch</p>
-        <h2>Interested in speech, tone, or language variation?</h2>
+      <section class="section contact" id="contact" data-reveal>
+        <h2>Contact</h2>
         <p>
           I welcome conversations about Mandarin dialects, speech technology,
           and collaborative research.
         </p>
-        <a class="contact-email" href="mailto:xiyang.li2@uzh.ch">xiyang.li2@uzh.ch</a>
+        <a class="email" href="mailto:xiyang.li2@uzh.ch">xiyang.li2@uzh.ch</a>
       </section>
     </main>
 
     <footer>
       <p>© 2026 Xiyang Li</p>
-      <div class="footer-links">
-        <a href="https://orcid.org/0009-0004-3456-6923">ORCID</a>
-        <a href="https://github.com/xiyangg12">GitHub</a>
-        <a href="https://www.cl.uzh.ch/">University of Zurich</a>
-      </div>
+      <a href="#top">Back to top</a>
     </footer>
   </body>
 </html>
